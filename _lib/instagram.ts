@@ -54,7 +54,7 @@ export async function post(path: string, caption: string) {
   });
 
   console.log(publishResult);
-});
+};
 
 /**
  * Generate a usertag

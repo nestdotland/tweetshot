@@ -13,10 +13,10 @@ async function login() {
   await ig.account.login(process.env.IG_USERNAME, process.env.IG_PASSWORD);
 }
 
-(async () => {
+export async function post(path: String, caption: String) {
   await login();
 
-  const path = './myPicture.jpg';
+  // const path = './myPicture.jpg';
   const { latitude, longitude, searchQuery } = {
     latitude: 0.0,
     longitude: 0.0,
@@ -41,7 +41,7 @@ async function login() {
     // read the file into a Buffer
     file: await readFileAsync(path),
     // optional, default ''
-    caption: 'my caption',
+    caption,
     // optional
     location: mediaLocation,
     // optional
@@ -54,7 +54,7 @@ async function login() {
   });
 
   console.log(publishResult);
-})();
+});
 
 /**
  * Generate a usertag

@@ -6,5 +6,5 @@ import * as fs from "fs";
 (async () => {
   let tweet = await getTweet();
   console.log(tweet)
-  fs.writeFileSync("screenshot.png", getScreenshot(getHtml(tweet), "png", true));
+  await fs.writeFileSync("screenshot.png", getScreenshot(getHtml(tweet), "png", true));
 })()

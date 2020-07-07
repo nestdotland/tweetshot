@@ -8,9 +8,9 @@ const ig = new IgApiClient();
 
 async function login() {
   // basic login-procedure
-  ig.state.generateDevice(process.env.IG_USERNAME);
-  ig.state.proxyUrl = process.env.IG_PROXY;
-  await ig.account.login(process.env.IG_USERNAME, process.env.IG_PASSWORD);
+  ig.state.generateDevice(process.env.IG_USERNAME || "");
+  ig.state.proxyUrl = process.env.IG_PROXY || "";
+  await ig.account.login(process.env.IG_USERNAME || "", process.env.IG_PASSWORD || "");
 }
 
 export async function post(path: string, caption: string) {

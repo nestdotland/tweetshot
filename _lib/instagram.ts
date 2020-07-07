@@ -1,5 +1,5 @@
 /* tslint:disable:no-console */
-import { IgApiClient } from 'instgram-private-api';
+import { IgApiClient } from 'instagram-private-api';
 import { readFile } from 'fs';
 import { promisify } from 'util';
 const readFileAsync = promisify(readFile);
@@ -13,7 +13,7 @@ async function login() {
   await ig.account.login(process.env.IG_USERNAME, process.env.IG_PASSWORD);
 }
 
-export async function post(path: String, caption: String) {
+export async function post(path: string, caption: string) {
   await login();
 
   // const path = './myPicture.jpg';

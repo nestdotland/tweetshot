@@ -7,9 +7,9 @@ const client = new Twitter({
   access_token_secret: "--"
 });
 
-(async () => {
+export async function getTweet() {
   const latestTweets = await client.get("statuses/user_timeline", {
     screen_name: "nestdotland"
   }).catch(x => x);
-  let tweet = latestTweets[0];
-})()
+  return latestTweets[0];
+}

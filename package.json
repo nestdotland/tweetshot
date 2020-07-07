@@ -10,12 +10,13 @@
     "chrome-aws-lambda": "2.1.1",
     "instagram-private-api": "^1.41.0",
     "marked": "0.8.2",
+    "puppeteer-core": "^2.1.1",
     "twemoji": "12.1.5",
     "twitter-lite": "^0.14.0"
   },
   "devDependencies": {
-    "@types/puppeteer": "2.0.1",
-    "@types/puppeteer-core": "2.0.0",
-    "typescript": "3.8.3"
+    "@types/puppeteer": "^2.0.1",
+    "@types/puppeteer-core": "^2.0.0",
+    "typescript": "^3.8.3"
   }
 }

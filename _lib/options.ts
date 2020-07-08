@@ -21,8 +21,8 @@ export async function getOptions(isDev: boolean) {
         };
     } else {
         options = {
-            chrome.args,
-            await chrome.executablePath,
+            args: chrome.args,
+            executablePath: await chrome.executablePath,
             headless: chrome.headless,
         };
     }

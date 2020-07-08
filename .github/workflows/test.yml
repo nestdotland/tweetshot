@@ -22,7 +22,7 @@ jobs:
     - run: npm run build
     - run: node ./dist/index.js
       env:
-        consumer_key: SGihIj2k1LsQdJhbKndxkoZTN
-        consumer_secret: kzfs8VW2fzfVQXDyGwAS1zQ1cpMTD5lTbPna00SwdWhRbjtC4g
-        access_token_key: 953245374818410496-8AqIqu2USmmrEOjeoISBDBXiozhos5j
-        access_token_secret: srEeirdFt4ThZaQwNMaONezQv32hioeynE7Wvsn4ZcoHO
+        consumer_key: ${{ secrets.TWITTER_CONSUMER_KEY }}
+        consumer_secret: ${{ secrets.TWITTER_CONSUMER_SECRET }}
+        access_token_key: ${{ secrets.ACCESS_TOKEN_KEY }}
+        access_token_secret: ${{ secrets.ACCESS_TOKEN_SECRET }}

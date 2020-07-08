@@ -3,7 +3,6 @@ import { getTweet } from "./_lib/tweet";
 import { post } from "./_lib/instagram";
 // @ts-ignore
 import toImg from "node-html-to-image";
-
 (async () => {
   let tweet = await getTweet();
   if (tweet) {

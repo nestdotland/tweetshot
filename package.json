@@ -9,12 +9,11 @@
   "dependencies": {
     "@types/luxon": "^1.24.1",
     "chrome-aws-lambda": "2.1.1",
+    "image-clipper": "^0.4.4",
     "instagram-private-api": "^1.41.0",
-    "marked": "0.8.2",
     "moment": "^2.27.0",
     "node-html-to-image": "^3.0.0",
     "puppeteer-core": "^2.1.1",
-    "twemoji": "12.1.5",
     "twitter-lite": "^0.14.0"
   },
   "devDependencies": {

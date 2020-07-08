@@ -19,6 +19,4 @@ export async function getTweet() {
   if (oneDay > Number(new Date(tweetDate))) {
     return latestTweets[0];
   }
-//  return latestTweets[0];
-
 }

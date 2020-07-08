@@ -5,10 +5,12 @@ export function getHtml(tweet: any) {
   </span>
   <div class="mt-2 p-4">
     <img src="https://avatars2.githubusercontent.com/u/65864058?s=200&v=4" class="rounded-circle shadow border mt-4" width="100px">
-     <span class="mb-4">@nestdotland <br> nest.land</span>
   </div>
+  <h4 class="mt-2">
+    nest.land
+  </h4>
+  <span class="text-muted">@nestdotland</span>
 </div>
-
 <!-- Include external CSS, JavaScript or Fonts! -->
 <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 
@@ -22,6 +24,8 @@ export function getHtml(tweet: any) {
 }
 html, body {
  background-image: linear-gradient(to right, #eee 0%, #fff 100%);
+ width: 600px;
+ max-height: 600px;
 }
 </style>`;
 }

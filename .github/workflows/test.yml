@@ -26,3 +26,5 @@ jobs:
         consumer_secret: ${{ secrets.TWITTER_CONSUMER_SECRET }}
         access_token_key: ${{ secrets.ACCESS_TOKEN_KEY }}
         access_token_secret: ${{ secrets.ACCESS_TOKEN_SECRET }}
+        IG_USERNAME: nestdotland
+        IG_PASSWORD: ${{ secrets.IG_PASSWORD }}

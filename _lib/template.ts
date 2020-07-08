@@ -24,8 +24,8 @@ export function getHtml(tweet: any) {
 }
 html, body {
  background-image: linear-gradient(to right, #eee 0%, #fff 100%);
- width: 600px;
- max-height: 600px;
+ width: 500px;
+ height: 500px;
 }
 </style>`;
 }

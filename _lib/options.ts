@@ -16,7 +16,7 @@ export async function getOptions(isDev: boolean) {
     if (isDev) {
         options = {
             args: [],
-            executablePath: exePath,
+            executablePath: "google-chrome-stable",
             headless: true
         };
     } else {

@@ -15,6 +15,7 @@ export async function getTweet() {
     screen_name: "nestdotland"
   }).catch(x => x);
   let tweetDate = moment(latestTweets[0].created_at, 'dd MMM DD HH:mm:ss ZZ YYYY', 'en').utc().format();
+
   if (oneDay > Number(new Date(tweetDate))) {
     return latestTweets[0];
   }

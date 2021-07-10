@@ -1,8 +1,5 @@
 /* tslint:disable:no-console */
 import { IgApiClient } from 'instagram-private-api';
-import { readFile } from 'fs';
-import { promisify } from 'util';
-const readFileAsync = promisify(readFile);
 
 const ig = new IgApiClient();
 
@@ -12,12 +9,11 @@ async function login() {
   await ig.account.login(process.env.IG_USERNAME || "", process.env.IG_PASSWORD || "");
 }
 
-export async function post(path: string, caption: string) {
+export async function post(file: Buffer, caption: string) {
   await login();
-
   const publishResult = await ig.publish.photo({
-    // read the file into a Buffer
-    file: await readFileAsync(path),
+    // pass a Buffer from screenshot tool
+    file,
     // optional, default ''
     caption,
   });

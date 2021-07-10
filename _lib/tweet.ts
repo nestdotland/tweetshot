@@ -14,7 +14,7 @@ export async function getTweet() {
   const latestTweets = await client.get("statuses/user_timeline", {
     screen_name: "nestdotland"
   }).catch(x => x);
-  let tweetDate = moment(latestTweets[0].createdAt, 'dd MMM DD HH:mm:ss ZZ YYYY', 'en').utc().format();;
+  let tweetDate = moment(latestTweets[0].created_at, 'dd MMM DD HH:mm:ss ZZ YYYY', 'en').utc().format();
 
   if (oneDay > Number(new Date(tweetDate))) {
     return latestTweets[0];
